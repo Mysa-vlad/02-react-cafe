@@ -5,7 +5,7 @@ interface VoteOptionsProps{
      onReset: ()=> void
      canReset: boolean
 }
-const VoteOption = ({onVote, onReset, canReset}:VoteOptionsProps) =>{
+const VoteOptions = ({onVote, onReset, canReset}:VoteOptionsProps) =>{
     return (
         <div className={css.container}>
   <button className={css.button} onClick={() => onVote('good')}>Good</button>
@@ -20,4 +20,4 @@ const VoteOption = ({onVote, onReset, canReset}:VoteOptionsProps) =>{
 
     )
 }
-export default VoteOption
+export default VoteOptions
